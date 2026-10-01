@@ -124,7 +124,7 @@ class Reader{
      * @param boolean $considerHtml If true, HTML tags would be handled correctly
      * @return string Trimmed string.
      */
-    public function truncate($text, $length = 100, $ending = '...', $exact = true, $considerHtml = false)
+    public static function truncate($text, $length = 100, $ending = '...', $exact = true, $considerHtml = false)
     {
         if ($considerHtml) {
             // if the plain text is shorter than the maximum length, return the whole text
@@ -224,7 +224,7 @@ class Reader{
         return $truncate;
     }
 
-    public function multiexplode($delimiters, $string)
+    public static function multiexplode($delimiters, $string)
     {
 
         $ready = str_replace($delimiters, $delimiters[0], $string);
