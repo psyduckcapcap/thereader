@@ -42,7 +42,7 @@ foreach ($sentences as $sentence) {
   $id++;
   for ($i = 0; $i < 3; $i++) {
 
-    $url = 'http://translate.google.com/translate_tts?ie=UTF-8&q=' . urlencode($sentence) . '&tl=' . $lang . '&total=1&idx=0&textlen=1000&client=tw-ob'; //&ttsspeed=1';
+    $url = 'https://translate.google.com/translate_tts?ie=UTF-8&q=' . urlencode($sentence) . '&tl=' . $lang . '&total=1&idx=0&textlen=1000&client=tw-ob'; //&ttsspeed=1';
 
     $filetts = 'audio/' . $uuid . '_' . $id . '.mp3';
 
